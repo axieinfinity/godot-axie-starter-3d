@@ -1,0 +1,152 @@
+[gd_scene load_steps=28 format=3 uid="uid://bu4wdv1jwqgau"]
+
+[ext_resource type="PackedScene" uid="uid://b5onb6rha5w67" path="res://model/buba.fbx" id="1_2yae7"]
+[ext_resource type="Texture2D" uid="uid://ch0wy8plut80g" path="res://textures/buba.jpg" id="2_wq3l2"]
+[ext_resource type="AnimationLibrary" uid="uid://b3c2tb0ubfavw" path="res://animations/buba/starter_buba_cuttree.fbx" id="3_hdklg"]
+[ext_resource type="AnimationLibrary" uid="uid://c45togoj6f2av" path="res://animations/buba/starter_buba_idle.fbx" id="4_3uxgd"]
+[ext_resource type="AnimationLibrary" uid="uid://d3i3c314fwbnk" path="res://animations/buba/starter_buba_idleattack.fbx" id="5_phl7i"]
+[ext_resource type="AnimationLibrary" uid="uid://clmv7mv24a5em" path="res://animations/buba/starter_buba_idlecarryitem.fbx" id="6_d8o7t"]
+[ext_resource type="AnimationLibrary" uid="uid://6jrbhmqppbig" path="res://animations/buba/starter_buba_idlegethit.fbx" id="7_57mfn"]
+[ext_resource type="AnimationLibrary" uid="uid://cl65pfbg37atp" path="res://animations/buba/starter_buba_jump.fbx" id="8_osdps"]
+[ext_resource type="AnimationLibrary" uid="uid://oadeytgbrso4" path="res://animations/buba/starter_buba_run.fbx" id="9_lixmy"]
+[ext_resource type="AnimationLibrary" uid="uid://brbrt5fenl2we" path="res://animations/buba/starter_buba_runattack.fbx" id="10_d3ps6"]
+[ext_resource type="AnimationLibrary" uid="uid://gywjg4da7e8h" path="res://animations/buba/starter_buba_runcarryitem.fbx" id="11_baskw"]
+[ext_resource type="AnimationLibrary" uid="uid://dt3d3fblecihw" path="res://animations/buba/starter_buba_rungethit.fbx" id="12_q6sbg"]
+[ext_resource type="AnimationLibrary" uid="uid://bok540ndmssxi" path="res://animations/buba/starter_buba_runjump.fbx" id="13_dlsbo"]
+[ext_resource type="AnimationLibrary" uid="uid://3ontxyrvj11s" path="res://animations/buba/starter_buba_walk.fbx" id="14_5o1kf"]
+[ext_resource type="AnimationLibrary" uid="uid://dtkrqj1b2v2tg" path="res://animations/buba/starter_buba_walkattack.fbx" id="15_jo2o3"]
+[ext_resource type="AnimationLibrary" uid="uid://blxnksh3na3t6" path="res://animations/buba/starter_buba_walkcarryitem.fbx" id="16_i4yrd"]
+[ext_resource type="AnimationLibrary" uid="uid://cc4fk2pm55n5a" path="res://animations/buba/starter_buba_walkjump.fbx" id="17_o15mh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xflc1"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fcied"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4wfbg"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0bd76"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbhqx"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mff4k"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c1r0m"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_064mo"]
+albedo_texture = ExtResource("2_wq3l2")
+
+[sub_resource type="Animation" id="Animation_g8hvb"]
+resource_name = "Take 001"
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tryxa"]
+_data = {
+"Take 001": SubResource("Animation_g8hvb")
+}
+
+[node name="buba" instance=ExtResource("1_2yae7")]
+
+[node name="Skeleton3D" parent="RootNode/JointBase_Grp" index="0"]
+bones/1/rotation = Quaternion(0.145735, 0, 0, 0.989324)
+bones/2/rotation = Quaternion(-0.0310921, 0, 0, 0.999517)
+bones/4/rotation = Quaternion(0.27962, 0, 0, 0.960111)
+bones/5/rotation = Quaternion(0.937149, 0.33133, -0.0296166, 0.10533)
+bones/6/rotation = Quaternion(-1.09341e-16, -0.0553892, 1.92314e-15, 0.998465)
+bones/10/rotation = Quaternion(-0.10533, -0.0296166, -0.33133, 0.937149)
+bones/11/rotation = Quaternion(4.09901e-19, -0.0553892, 5.31793e-18, 0.998465)
+bones/15/rotation = Quaternion(-0.153779, 0, 0, 0.988105)
+bones/16/rotation = Quaternion(0.0657529, 0, 0, 0.997836)
+bones/17/rotation = Quaternion(-0.564743, 0, 0, 0.825267)
+bones/18/rotation = Quaternion(-0.137559, 0, 0, 0.990494)
+bones/21/rotation = Quaternion(0.988105, 1.01763e-24, 6.53873e-24, 0.153779)
+bones/22/rotation = Quaternion(0.0657529, -2.03019e-10, 3.08092e-09, 0.997836)
+bones/23/rotation = Quaternion(-0.564743, 2.37519e-09, -1.62538e-09, 0.825267)
+bones/24/rotation = Quaternion(-0.137559, 5.56694e-09, -7.73134e-10, 0.990494)
+bones/26/rotation = Quaternion(-0.377995, 0, 0, 0.925808)
+bones/28/rotation = Quaternion(0.229988, 0, 0, 0.973194)
+bones/31/rotation = Quaternion(0.149831, 0, 0, 0.988712)
+bones/33/rotation = Quaternion(0.508294, 0, 0, 0.861183)
+bones/45/rotation = Quaternion(-0.0213953, -0.266385, 0.331103, 0.90496)
+bones/46/rotation = Quaternion(0.0941238, 0.21578, -0.38896, 0.890668)
+bones/48/rotation = Quaternion(0.90496, -0.331103, -0.266385, 0.0213953)
+bones/49/rotation = Quaternion(0.0941238, 0.21578, -0.38896, 0.890668)
+bones/51/rotation = Quaternion(0.278859, 0, 0, 0.960332)
+bones/53/rotation = Quaternion(0.0351797, 0, 0, 0.999381)
+bones/54/rotation = Quaternion(0.0742062, 0, 0, 0.997243)
+bones/55/rotation = Quaternion(-0.109243, 0, 0, 0.994015)
+bones/57/rotation = Quaternion(0.0351786, 0, 0, 0.999381)
+bones/58/rotation = Quaternion(0.0742074, 0, 0, 0.997243)
+bones/59/rotation = Quaternion(0.0351786, 0, 0, 0.999381)
+bones/60/rotation = Quaternion(0.0742074, 0, 0, 0.997243)
+bones/61/rotation = Quaternion(-0.0383929, 0, 0, 0.999263)
+bones/63/rotation = Quaternion(0.259933, -0.252802, -0.0873029, 0.927849)
+bones/65/rotation = Quaternion(0.927849, 0.0873029, -0.252802, -0.259933)
+bones/66/rotation = Quaternion(-0.0213953, -0.266385, 0.331103, 0.90496)
+bones/67/rotation = Quaternion(0.90496, -0.331103, -0.266385, 0.0213953)
+bones/68/rotation = Quaternion(-0.156744, 0.182491, -0.0105233, 0.970576)
+bones/69/rotation = Quaternion(0.970576, 0.0105233, 0.182491, 0.156744)
+bones/71/rotation = Quaternion(-0.123834, 0.179988, -0.0228466, 0.975576)
+bones/73/rotation = Quaternion(0.975576, 0.0228466, 0.179988, 0.123834)
+bones/74/rotation = Quaternion(0.293888, 0.0173617, -0.0922446, 0.95122)
+bones/75/rotation = Quaternion(0.508294, 0, 0, 0.861183)
+bones/76/rotation = Quaternion(0.95122, 0.0922446, 0.0173617, -0.293888)
+bones/77/rotation = Quaternion(0.278859, 0, 0, 0.960332)
+bones/78/rotation = Quaternion(0.0556404, 0.163912, -0.00470924, 0.984893)
+bones/79/rotation = Quaternion(0.984893, 0.00470924, 0.163912, -0.0556404)
+bones/80/rotation = Quaternion(0.0351797, 0, 0, 0.999381)
+bones/81/rotation = Quaternion(0.0351797, 0, 0, 0.999381)
+bones/82/rotation = Quaternion(-0.0383929, 0, 0, 0.999263)
+bones/83/rotation = Quaternion(-0.365343, -0.104551, 0.0440443, 0.923934)
+bones/84/rotation = Quaternion(-0.377995, 0, 0, 0.925808)
+bones/85/rotation = Quaternion(0.923934, -0.0440443, -0.104551, 0.365343)
+
+[node name="SM_Eye_M_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_xflc1")
+
+[node name="SM_Mouth_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_fcied")
+
+[node name="SM_Ear_R_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="2"]
+material_override = SubResource("StandardMaterial3D_4wfbg")
+
+[node name="SM_Ear_L_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="3"]
+material_override = SubResource("StandardMaterial3D_0bd76")
+
+[node name="SM_Horn_T_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="4"]
+material_override = SubResource("StandardMaterial3D_gbhqx")
+
+[node name="SM_Back_M_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="5"]
+material_override = SubResource("StandardMaterial3D_mff4k")
+
+[node name="SM_Tail_M_1" parent="RootNode/JointBase_Grp/Skeleton3D" index="6"]
+material_override = SubResource("StandardMaterial3D_c1r0m")
+
+[node name="SM_Body" parent="RootNode/JointBase_Grp/Skeleton3D" index="7"]
+material_override = SubResource("StandardMaterial3D_064mo")
+
+[node name="AnimationPlayer" parent="." index="1"]
+libraries = {
+"": SubResource("AnimationLibrary_tryxa"),
+"starter_buba_cuttree": ExtResource("3_hdklg"),
+"starter_buba_idle": ExtResource("4_3uxgd"),
+"starter_buba_idleattack": ExtResource("5_phl7i"),
+"starter_buba_idlecarryitem": ExtResource("6_d8o7t"),
+"starter_buba_idlegethit": ExtResource("7_57mfn"),
+"starter_buba_jump": ExtResource("8_osdps"),
+"starter_buba_run": ExtResource("9_lixmy"),
+"starter_buba_runattack": ExtResource("10_d3ps6"),
+"starter_buba_runcarryitem": ExtResource("11_baskw"),
+"starter_buba_rungethit": ExtResource("12_q6sbg"),
+"starter_buba_runjump": ExtResource("13_dlsbo"),
+"starter_buba_walk": ExtResource("14_5o1kf"),
+"starter_buba_walkattack": ExtResource("15_jo2o3"),
+"starter_buba_walkcarryitem": ExtResource("16_i4yrd"),
+"starter_buba_walkjump": ExtResource("17_o15mh")
+}
